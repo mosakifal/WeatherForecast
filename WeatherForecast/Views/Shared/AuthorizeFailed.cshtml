@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Authorize Failed";
+}
+
+@{
+    if (Session["UserId"] == null)
+    {
+        Response.Redirect("~/Account/Index");
+    }
+}
+
+<h2>AuthorizeFailed</h2>
+<p>@ViewData["Message"]</p>
+

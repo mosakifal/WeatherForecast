@@ -1,0 +1,19 @@
+﻿@model  IEnumerable<WeatherForecast.Models.Weather>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Weather for the next 5 days</h2>
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.Date.ToShortDateString()
+        @item.State
+        <img src="/Content/Images/@item.Image" height="22" width="22" />
+        <hr />
+    </div>
+}
+
+<input type="button" value="Refresh" onclick="location.href='@Url.Action("index", "Forecast")'" />

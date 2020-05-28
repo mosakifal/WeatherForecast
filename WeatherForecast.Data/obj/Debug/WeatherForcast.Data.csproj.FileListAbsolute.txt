@@ -1,0 +1,5 @@
+C:\Users\mosak\source\repos\WeatherForcast\WeatherForcast.Data\bin\Debug\WeatherForcast.Data.dll
+C:\Users\mosak\source\repos\WeatherForcast\WeatherForcast.Data\bin\Debug\WeatherForcast.Data.pdb
+C:\Users\mosak\source\repos\WeatherForcast\WeatherForcast.Data\obj\Debug\WeatherForcast.Data.csprojAssemblyReference.cache
+C:\Users\mosak\source\repos\WeatherForcast\WeatherForcast.Data\obj\Debug\WeatherForcast.Data.dll
+C:\Users\mosak\source\repos\WeatherForcast\WeatherForcast.Data\obj\Debug\WeatherForcast.Data.pdb

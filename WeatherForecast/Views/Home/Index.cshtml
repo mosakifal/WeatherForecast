@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*@{ 
+    if(Session["UserId"] == null)
+    {
+        Response.Redirect("~/Account/Index");
+    }
+}*@
+
+<div class="jumbotron">
+    <p>@Session["Username"]</p>
+    <p class="lead">Welcome to belfast weather forcast.</p>
+</div>
+
+<div>
+    <a href="@Url.Action("LogOut", "Account")">LogOut</a>
+</div>
