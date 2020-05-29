@@ -27,7 +27,7 @@ namespace WeatherForecast.Controllers
 
            if(model == null)
            {
-                return HttpNotFound();
+                return View("NotFound");
            }
 
            return View(model);

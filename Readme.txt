@@ -9,6 +9,6 @@ To Test the application you will need the following loging details :
 	Role : Sales
 
 mohamed has the admin role so he can get forcast. 
-After logging in click on forcast on the main menu next to home to get the data. 
+After logging in please click on forcast on the navigation bar to retreive the weather information. 
 
-The other user doesn't have admin role so they can't get forcast.
+The other user james doesn't have admin role so het can't retreive the weather information.
