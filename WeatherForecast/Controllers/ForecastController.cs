@@ -25,6 +25,11 @@ namespace WeatherForecast.Controllers
            }
            var model = _apiHandler.GetWeather();
 
+           if(model == null)
+           {
+                return HttpNotFound();
+           }
+
            return View(model);
         }
     }

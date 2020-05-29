@@ -74,6 +74,5 @@ namespace WeatherForecast.UnitTests
             Assert.IsTrue(result);
             Assert.AreEqual(_model.Count, 5);
         }
-
     }
 }
