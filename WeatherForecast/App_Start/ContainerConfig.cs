@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using WeatherForecast.Data.Services;
 using WeatherForecast.Services;
 
-namespace WeatherForecast.App_Start
+namespace WeatherForecast
 {
     public class ContainerConfig
     {
@@ -18,10 +18,10 @@ namespace WeatherForecast.App_Start
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterType<InMemoryUserData>()
                    .As<IUserData>()
-                   .SingleInstance();
+                   .InstancePerLifetimeScope();
             builder.RegisterType<WeatherApiHandler>()
                    .As<IWeatherApiHandler>()
-                   .SingleInstance();
+                   .InstancePerLifetimeScope();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
